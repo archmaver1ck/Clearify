@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearify.AI - Image Clarity Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="C:\Users\Welcome\Downloads\Dark bg-3.png">
+    <header>
+        <a href="/" class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span style="color: aliceblue;">Clearify.AI</span>
+        </a>
+        
+        <nav class="main-nav">
+            <div class="dropdown">
+                <button class="nav-btn">About Us</button>
+                <div class="dropdown-menu">
+                    <a style="color: aliceblue;"href="#">Our Team</a>
+                    <a style="color: aliceblue;"href="#">Vision</a>
+                    <a style="color: aliceblue;"href="#">Technology</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="nav-btn">Crop Image</button>
+                <div class="dropdown-menu">
+                    <a style="color: aliceblue;"href="#">Basic Cropping</a>
+                    <a style="color: aliceblue;"href="#">Advanced Tools</a>
+                    <a style="color: aliceblue;"href="#">Preset Ratios</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="nav-btn">Upload Image</button>
+                <div class="dropdown-menu">
+                    <a style="color: aliceblue;"href="#">Single Upload</a>
+                    <a style="color: aliceblue;"href="#">Batch Upload</a>
+                    <a style="color: aliceblue;"href="#">Cloud Import</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <head>
+    <style>
+parallax {
+background-image: url("C:\Users\Welcome\Downloads\Dark bg-3.png");
+min-height: 100%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+</head>
+    <main>
+        <section class="blurry-box" id="box1">
+            <div class="blurry-content">
+                <p style="font-size: xx-large; font-family:monospace"> <b> <u> This text appears blurry until you interact with the magnifier tool. 
+                Our advanced algorithm can clarify even the most obscured images. </u><b></p>
+            </div>
+            <div class="magnifier-tool"></div>
+        </section>
+
+        <section class="demo-box" id="box2">
+            <h2>See It in Action</h2>
+            <div class="video-wrapper">
+                <!-- Replace with your actual video embed code -->
+                <iframe src="https://www.youtube.com/embed/example" 
+                        frameborder="0" 
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="try-section">
+            <button id="tryBtn" class="cta-button">Try It Yourself!</button>
+            <div class="action-buttons">
+                <button class="action-btn" data-action="crop">
+                    <i class="icon-crop"></i> Crop an Image
+                </button>
+                <button class="action-btn" data-action="upload">
+                    <i class="icon-upload"></i> Upload Image
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
